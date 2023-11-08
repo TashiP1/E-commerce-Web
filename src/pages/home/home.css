@@ -1,0 +1,18 @@
+.heading{
+    background-image: url('src/assets/background.jpg');
+    position: absolute;
+    height: 130%;
+    width: 200%;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 0 50%, 0 100%);
+}
+
+.home span{
+    color: rgb(243, 118, 124);
+}
+
+.home h1{
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 10%;
+}

@@ -1,24 +1,28 @@
 .shopTitle {
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 40px;
 }
-span{
-    color: rgb(233, 115, 18);
+
+span {
+  color: rgb(233, 115, 18);
 }
+
 .products {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
+  overflow: hidden;
 }
 
 .product {
   border-radius: 15px;
-  width: 300px;
-  height: 350px;
-  margin: 100px;
+  width: 200px;
+  height: 300px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +30,8 @@ span{
 }
 
 .product img {
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 200px;
 }
 
 .product .description {
@@ -37,12 +41,16 @@ span{
 }
 
 .product .description p {
-    margin: 20px;
-  }
+  margin: 20px;
+}
 
 .product:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+.container{
+  margin-left: 150px;
 }
 
 .addToCartBttn {
@@ -69,7 +77,6 @@ span{
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: -1;
   width: 250px;
   margin-left: 200px;
 }
@@ -91,4 +98,9 @@ span{
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.noSearch{
+  height: 300px;
+  margin: 90px;
 }
