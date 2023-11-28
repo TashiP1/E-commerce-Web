@@ -1,18 +1,35 @@
 .heading{
-    background-image: url('src/assets/background.jpg');
     position: absolute;
-    height: 130%;
-    width: 200%;
+    height: 100vh;
+    width: 100%;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 0 50%, 0 100%);
+    clip-path: circle(160vh at 50% -80vh);
+    animation: change 15s infinite ease-in;;
 }
 
 .home span{
-    color: rgb(243, 118, 124);
+    color: rgb(1, 79, 248);
 }
 
 .home h1{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
     margin-top: 100px;
     margin-left: 10%;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url('src/assets/background.jpg');
+    }
+    50%
+    {
+        background-image: url('src/assets/background/img2.jpg');
+    }
+    100%
+    {
+        background-image: url('src/assets/background/img1.avif');
+    }
 }
